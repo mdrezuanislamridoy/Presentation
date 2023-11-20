@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .header .head .nav {
+            width: 70%;
+        }
+
+        .head .logo h1 span {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .head .logo a {
+            text-decoration: none;
+        }
+
+        .head .logo h1 {
+            color: rgb(229, 68, 235);
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            font-size: 36px;
+        }
+
+        .head .logo {
+            width: 30%;
+        }
+
+        .head {
+            display: flex;
+            background-color: rgb(9, 38, 61);
+            box-shadow: 2px 1px 6px white;
+            min-height: 60px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .head ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .nav {
+            width: 70%;
+        }
+
+        .head ul li {
+            list-style: none;
+
+        }
+
+        .head ul li a:hover {
+            color: aqua;
+            display: inline-block;
+
+        }
+
+        .head ul li .active {
+            color: aqua;
+            display: inline-block;
+        }
+
+        .head ul li a:hover::after {
+            width: 100%;
+        }
+
+        .head ul li a::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: aqua;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .head ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        .dev img {
+            border-radius: 50%;
+            width: 148px;
+            display: block;
+        }
+
+        .dev {
+            display: flex;
+            width: 66%;
+            padding: 3rem;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .dev-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .dev-left h2 {
+            font-weight: 100;
+            font-size: 2.4rem;
+        }
+
+        .dev-left p {
+            margin: 0;
+        }
+
+        .social {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .social a {
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+            text-decoration: none;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            display: inline-block;
+            color: white;
+        }
+
+        .social a:hover {
+            box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #github {
+            background: #000;
+        }
+
+        #facebook {
+            background-color: dodgerblue;
+        }
+
+
+        #about {
+            padding: 20px 10%;
+        }
+
+
+        #about .right-part img {
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        #about .left {
+            width: 100%;
+            display: flex;
+        }
+
+
+
+        #about .left .lee {
+            display: flex;
+            width: 100%;
+        }
+
+        #about .left .left-name h3,
+        #about .left .right-name h3 {
+            margin-bottom: 1rem;
+        }
+
+        #about .left .lee .left-name {
+            width: 50%;
+        }
+
+        #about .left .lee .right-name {
+            width: 50%;
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="index.html">
+                <h1>RR <span> KPI</span></h1>
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about_kpi.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Developer</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="dev">
+        <div class="dev-left">
+            <img src="img/me.jpg" alt="">
+            <h2> Ridoy Babu</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam rem dolores numquam ratione
+                cupiditate, adipisci eius doloribus tempora est porro quasi iste. Quae quo vero repudiandae illum
+                perferendis dolor! <br>
+                <span style="font-weight: bold; font-size: 20px;"> Student of CST in Kurigram Polytechnic Institute</span>
+            </p>
+
+
+        </div>
+        <div class="dev-right">
+
+        </div>
+    </section>
+
+    <div id="about">
+
+
+        <div class="left">
+            <div class="lee">
+                <div class="left-name">
+                    <h3>Name</h3>
+                    <h3>Father's Name</h3>
+                    <h3>Mothers's Name</h3>
+                    <h3>Date of birth</h3>
+                    <h3>Present address</h3>
+                    <h3>Permenent address</h3>
+                    <h3>Maritul Status</h3>
+                    <h3>Phone</h3>
+                    <h3>Education Qualification</h3>
+
+                </div>
+                <div class="right-name">
+                    <h3>: Md Ridoy Babu</h3>
+                    <h3>: MD Nur-Alam</h3>
+                    <h3>: Mst Rina Begum</h3>
+                    <h3>: 08-06-2005</h3>
+                    <h3>: Kurigram </h3>
+                    <h3>: Rangpur</h3>
+                    <h3>: Single</h3>
+                    <h3>: 01735699781</h3>
+                    <h3>: Diploma in CST</h3>
+                </div>
+            </div>
+
+        </div>
+        target="_blank" 
+    </div>
+    <div class="social">
+        <a id="github" target="_blank" 
+            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2Fmdrezuanislamridoy%3Ffbclid%3DIwAR0jFdeZl1ueS7AzvV8Oz7myM2N0rA2ifqo_u7IidK1B7Nv-jlF0k90Wyxs&h=AT2MwwXb5p1Jv_JeOHxUsC22yE16LNywN43TeF9l_E6Bk4pw_xX0j60UPmlYX4ZAYKFiXse7gTPf9HH5ffbt_V_1-2I1qZdXAz7sXiPGAKkEAI7xW0dA9M3eYKX2kpf1zzmR3g">
+            Github </a>
+        <a id="facebook" target="_blank"  href="https://www.facebook.com/RidoyBabu.FutureDeveloper/"> Facebook </a>
+    </div>
+
+    
+</body>
+
+</html>
